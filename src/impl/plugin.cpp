@@ -27,12 +27,14 @@ CGameEntitySystem* GameEntitySystem( )
 
 CEntityIdentity* CEntitySystem::GetEntityIdentity( const CEntityHandle& hEnt )
 {
-	return g_pCtx->m_Addresses.m_pGetBaseEntity.Call< CBaseEntity* >( this, hEnt.GetEntryIndex( ) )->m_pEntity;
+	auto pEntity = g_pCtx->m_Addresses.m_pGetBaseEntity.Call< CBaseEntity* >( this, hEnt.GetEntryIndex( ) );
+	return pEntity ? pEntity->m_pEntity : nullptr;
 }
 
 CEntityIdentity* CEntitySystem::GetEntityIdentity( CEntityIndex iEnt )
 {
-	return g_pCtx->m_Addresses.m_pGetBaseEntity.Call< CBaseEntity* >( this, iEnt.Get( ) )->m_pEntity;
+	auto pEntity = g_pCtx->m_Addresses.m_pGetBaseEntity.Call< CBaseEntity* >( this, iEnt.Get( ) );
+	return pEntity ? pEntity->m_pEntity : nullptr;
 }
 
 bool MenusExample::Load( PluginId id, ISmmAPI* ismm, char* error, size_t maxlen, bool late )
