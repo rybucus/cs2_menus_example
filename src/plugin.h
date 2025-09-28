@@ -1,5 +1,5 @@
-#ifndef _RUBY_ANTIAFK_PLUGIN_H_
-#define _RUBY_ANTIAFK_PLUGIN_H_
+#ifndef _CS2_MENUS_EXAMPLE_PLUGIN_H_
+#define _CS2_MENUS_EXAMPLE_PLUGIN_H_
 
 #include <igameevents.h>
 #include <sh_vector.h>
@@ -41,4 +41,4 @@ public:
 
 extern MenusExample g_Plugin;
 
-#endif //_RUBY_ANTIAFK_PLUGIN_H_
+#endif //_CS2_MENUS_EXAMPLE_PLUGIN_H_
