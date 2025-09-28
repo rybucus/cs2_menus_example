@@ -1,0 +1,11 @@
+{
+    "name": "cs2_menus_example_plugin",
+    "alias": "cs2_menus_example",
+    "display_name": "Menus example",
+    "description": "",
+    "author": "Rybucus",
+    "url": "",
+    "log_tag": "CS2_MENUS_EXAMPLE_PLUGIN",
+    "license": "MIT",
+    "version": "1.0.0.{{git-shorthash}}"
+}
